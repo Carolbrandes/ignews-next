@@ -1,0 +1,16 @@
+https://www.figma.com/file/OD1wZifEaBZLLvHf0BQXRB/ig.news-%E2%80%A2-Projeto-React-(Copy)?type=design&node-id=1-3&mode=design&t=dQ3ZAJTZVs6rGmfa-0
+
+quando temos uma api key private essa chamada deve ocorrer em uma dessas chamadas:
+
+1) getServerSideProps (SSR) - aqui e chamado antes da pag carregar
+2) getStaticProps (SSG) - aqui e chamado antes da pag carregar (ex: pages/index)
+3) Api routes -  vamos usar qd ocorre apos a acao do usuario.  ex: aqui vamos usar no ex do botao subscribe q clica e cria uma api session do checkout do strapi
+
+- cookies podem ser acessados tanto na camada backend quanto na front end desde que seja o mesmo dominio
+
+
+qd precisarmos ter uma chave publica que e acessada no front end no .env temos que comecar ela com NEXT_PUBLIC
+
+webhooks: qd uma aplicacao de terceiros avisa a nossa aplicacao que algum evento aconteceu
+
+cartao teste stripe: 4242 4242 4242 4242
