@@ -12,10 +12,14 @@ jest.mock("next/router", () => {
   };
 });
 
-jest.mock("next-auth/client", () => {
+jest.mock("next-auth/react", () => {
   return {
     useSession() {
-      return [null, false];
+      return {
+        data: {
+          expires: "fake-expires",
+        },
+      };
     },
   };
 });

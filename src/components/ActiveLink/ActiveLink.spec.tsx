@@ -16,7 +16,7 @@ describe("ActiveLink component", () => {
   it("renders correctly", () => {
     render(
       <ActiveLink href="/" activeClassName="active">
-        <a>Home</a>
+        Home
       </ActiveLink>
     );
 
@@ -26,7 +26,7 @@ describe("ActiveLink component", () => {
   it("adds active class if the link as currently active", () => {
     render(
       <ActiveLink href="/" activeClassName="active">
-        <a>Home</a>
+        Home
       </ActiveLink>
     );
 
