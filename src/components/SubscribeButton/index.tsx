@@ -4,10 +4,6 @@ import { api } from "../../services/api";
 import { getStripeJs } from "../../services/stripe-js";
 import { useRouter } from "next/router";
 
-interface SubscribeButtonProps {
-  priceId: string;
-}
-
 interface Session {
   data: {
     session: {
@@ -32,7 +28,7 @@ interface Session {
   status: "authenticated" | "unauthenticated";
 }
 
-export function SubscribeButton({ priceId }: SubscribeButtonProps) {
+export function SubscribeButton() {
   const session = useSession() as Session;
   const router = useRouter();
 
