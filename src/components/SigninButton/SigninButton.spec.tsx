@@ -25,9 +25,12 @@ describe("ActiveLink component", () => {
 
     useSessionMocked.mockReturnValueOnce({
       data: {
-        user: { name: "John Doe", email: "john.doe@example.com" },
+        session: {
+          user: { name: "John Doe", email: "john.doe@example.com" },
+        },
         expires: "fake-expires",
       },
+      status: "authenticated",
     } as any);
 
     const { debug } = render(<SignInButton />);
